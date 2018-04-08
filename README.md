@@ -9,3 +9,15 @@ With npm:
 
 With yarn:
 `yarn add bfcounter`
+
+## Usage
+
+```javascript
+const bfc = require("bfcounter");
+
+var counter = "100000000000000000000000000000000000000000000000000";
+
+var incremented = bfc.increment(counter); // "100000000000000000000000000000000000000000000000001"
+
+var decremented = bfc.decrement(incremented); // "100000000000000000000000000000000000000000000000000"
+```
